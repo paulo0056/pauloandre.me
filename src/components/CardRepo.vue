@@ -13,8 +13,8 @@
         <v-btn
           class="ma-2"
           color="orange-lighten-2"
-          small
-          variant="text"
+          small     
+          variant="flat"
           @click="goToGithub"
         >
           Explore
@@ -24,7 +24,7 @@
           class="tag-tech ma-2"
           small
           color="green"
-          variant="text"
+         variant="flat"
         >
           VUE JS
         </v-btn>
@@ -33,7 +33,7 @@
           class="tag-tech ma-2"
           color="blue"
           small
-          variant="text"
+         variant="flat"
         >
           Typescript
         </v-btn>
@@ -42,7 +42,7 @@
           class="tag-tech ma-2"
           small
           color="orange"
-          variant="text"
+         variant="flat"
         >
           HTML
         </v-btn>
@@ -50,7 +50,7 @@
           v-if="props.isJavascript"
           class="tag-tech ma-2"
           color="yellow"
-          variant="text"
+         variant="flat"
           small
         >
           Javascript
@@ -60,7 +60,7 @@
           class="tag-tech ma-2"
           small
           color="pink"
-          variant="text"
+         variant="flat"
         >
           CSS
         </v-btn>
@@ -70,7 +70,7 @@
           class="tag-tech ma-2"
           small
           color="#FFF59D"
-          variant="text"
+         variant="flat"
         >
           NODE
         </v-btn></v-row

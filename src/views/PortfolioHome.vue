@@ -521,7 +521,7 @@ const slideGroup = ref<boolean>(false);
   width: 100%;
 }
 .navbar {
-  z-index: 1;
+  z-index: 2;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.616);
   padding: 10px;
