@@ -124,6 +124,7 @@
                       color: rgb(8, 228, 8);
                       font-weight: 700;
                       font-size: 17px;
+                      margin-top: 10px;
                     "
                   >
                     GWCloud
@@ -134,12 +135,13 @@
                     front-end nos sistemas web da empresa, usando javascript,
                     typescript, Vue e design patterns como DDD e TDD
                   </p>
-                  <h2>Programador Junior</h2>
+                  <h2 style="margin-top: 10px;">Programador</h2>
                   <h3
                     style="
                       color: rgb(8, 228, 8);
                       font-size: 17px;
                       font-weight: 700;
+                      margin-top: 10px;
                     "
                   >
                     GWCloud
@@ -157,7 +159,7 @@
               <v-card flat class="tab-custom">
                 <v-card-text style="color: white">
                   <h2>Programador</h2>
-                  <h3 style="color: rgb(8, 228, 8); font-weight: 700">
+                  <h3 style="color: rgb(8, 228, 8); font-weight: 700; margin-top: 10px;">
                     Tecno System
                   </h3>
                   <p style="font-size: 15px">2020-2021</p>
@@ -169,8 +171,8 @@
                     , alem de participar do gerenciamento de projetos e
                     acompanhamento de trainees.
                   </p>
-                  <h2>Presidente</h2>
-                  <h3 style="color: rgb(8, 228, 8); font-weight: 700">
+                  <h2 style="margin-top: 10px;">Presidente</h2>
+                  <h3 style="color: rgb(8, 228, 8); font-weight: 700; margin-top: 10px;">
                     Tecno System
                   </h3>
                   <p style="font-size: 15px">2021-2022</p>
