@@ -12,9 +12,14 @@
         <!--  <v-col> <a> Imagem home </a></v-col> -->
         <v-col>
           <v-row justify="end" class="mr-2">
-            <a href="#about" class="mt-3"> Sobre </a>
-            <a href="#projects" class="mt-3"> Projetos </a>
-            <a href="#contact" class="mt-3"> Contato </a>
+            <v-img :src="getImageUrl('brazil-flag.png')"  class="mt-8 icon-flag"></v-img>
+            <a @click="setLocale('pt_BR')" class="mt-3">PT</a>
+            <span style="color: white;" class="mt-6">|</span>
+            <v-img :src="getImageUrl('us-flag.png')"  class="mt-8 ml-4 icon-flag"></v-img>
+            <a @click="setLocale('en')" class="mt-3">EN</a>
+            <a href="#about" class="mt-3"> {{$t('about')}} </a>
+            <a href="#projects" class="mt-3"> {{$t('projects')}} </a>
+            <a href="#contact" class="mt-3"> {{$t('contact')}} </a>
           </v-row>
         </v-col>
       </v-row>
@@ -27,25 +32,14 @@
         >
         <v-row id="about">
           <v-col class="hire-me-column">
-            <p class="title-profile mt-12">Olá,</p>
-            <p class="subtitle-profile">Eu me chamo Paulo André</p>
+            <p class="title-profile mt-12">{{$t('hello')}},</p>
+            <p class="subtitle-profile">{{$t('my_name_is')}}</p>
             <p class="description-profile">
-              Sou um desenvolvedor front-end formado pela UNEB(Universidade do
-              Estado da Bahia), trabalho na área de desenvolvimento há 4 anos,
-              com foco no desenvolvimento front end mais especificamente com Vue
-              Js, JavaScript e TypeScript com as quais trabalho atualmente na
-              GWCloud. Também tive experiencia em gestão de projetos na epoca em
-              que atuei como Presidente da Empresa Junior Tecno System a qual
-              sou conselheiro atualmente. Sou uma pessoa que ama trabalhar em
-              equipe e que tem uma fome gigantesca por adiquirir novos
-              conhecimentos, desejo continuar agregando aonde quer que eu passe
-              com o meu trabalho e conhecimento para que eu possa crescer
-              profissionalmente cada vez mais e consiga alcançar minhas
-              ambições.
+           {{$t('profile')}}
             </p>
             <v-btn color="green" class="white--text mt-5">
               <a href="#contact" style="text-decoration: none; color: white">
-                Me contrate
+                {{$t('hire_me')}}
               </a></v-btn
             >
           </v-col>
@@ -77,11 +71,7 @@
             <p class="title-profile mt-12">Skillset</p>
 
             <p class="description-profile">
-              Minha stack de tecnologias atual é Html, CSS, JavaScript,
-              TypeScript e Vue, mas tenho conhecimentos e projetos também na
-              área de desenvolvimento com wordpress, php e react e em
-              desenvolvimento mobile com o Flutter e modelagem de banco de dados
-              MySQL e MongoDB.
+              {{$t('stacks')}}
             </p>
           </v-col>
         </v-row>
@@ -118,7 +108,7 @@
             <v-window-item value="one">
               <v-card flat class="tab-custom">
                 <v-card-text style="color: white">
-                  <h2>Estagiário</h2>
+                  <h2>{{$t('intern')}}</h2>
                   <h3
                     style="
                       color: rgb(8, 228, 8);
@@ -131,11 +121,9 @@
                   </h3>
                   <p style="font-size: 17px">2021</p>
                   <p style="max-width: 1100px" class="exp-description">
-                    Participação das plainnings e atuando na programação
-                    front-end nos sistemas web da empresa, usando javascript,
-                    typescript, Vue e design patterns como DDD e TDD
+                    {{$t('gwcloud_description_job')}}
                   </p>
-                  <h2 style="margin-top: 10px;">Programador</h2>
+                  <h2 style="margin-top: 10px;"> {{$t('programmer')}}</h2>
                   <h3
                     style="
                       color: rgb(8, 228, 8);
@@ -146,11 +134,9 @@
                   >
                     GWCloud
                   </h3>
-                  <p style="font-size: 17px">2022-Atualmente</p>
+                  <p style="font-size: 17px">2022-  {{$t('currently')}}</p>
                   <p style="max-width: 1100px" class="exp-description">
-                    Participação das plainnings e atuando na programação
-                    front-end nos sistemas web da empresa, usando javascript,
-                    typescript, Vue e design patterns como DDD e TDD
+                    {{$t('gwcloud_description_job')}}
                   </p>
                 </v-card-text>
               </v-card>
@@ -158,29 +144,23 @@
             <v-window-item value="two">
               <v-card flat class="tab-custom">
                 <v-card-text style="color: white">
-                  <h2>Programador</h2>
+                  <h2>{{$t('programmer')}}</h2>
                   <h3 style="color: rgb(8, 228, 8); font-weight: 700; margin-top: 10px;">
                     Tecno System
                   </h3>
                   <p style="font-size: 15px">2020-2021</p>
 
                   <p style="max-width: 1100px" class="exp-description">
-                    Desenvolvimento de sites com wordpress e programação dos
-                    sistemas da empresa desde a modelagem de banco de dados até
-                    a programação de back end e front end com Php, react e MySql
-                    , alem de participar do gerenciamento de projetos e
-                    acompanhamento de trainees.
+                    {{$t('tecno_system_description')}}
                   </p>
-                  <h2 style="margin-top: 10px;">Presidente</h2>
+                  <h2 style="margin-top: 10px;"> {{$t('president')}}</h2>
                   <h3 style="color: rgb(8, 228, 8); font-weight: 700; margin-top: 10px;">
                     Tecno System
                   </h3>
                   <p style="font-size: 15px">2021-2022</p>
 
                   <p style="max-width: 1100px" class="exp-description">
-                    Criação de planejamento estratégico, controle financeiro,
-                    gestão de pessoas, atividades administrativas da empresa e
-                    gerenciamento de projetos
+                    {{$t('president_description')}}
                   </p>
                 </v-card-text>
               </v-card>
@@ -399,8 +379,16 @@ import { ref } from "vue";
 import CardProject from "../components/CardProject.vue";
 import CardRepo from "../components/CardRepo.vue";
 import ContactCard from "../components/ContactCard.vue";
+import { i18n } from "../main";
 const tab = ref<boolean>(false);
 const slideGroup = ref<boolean>(false);
+  const getImageUrl = (name: string | undefined) => {
+        return new URL(`../assets/${name}`, import.meta.url).href
+    }
+   const setLocale = (locale: any) => {
+      i18n.global.locale = locale
+    }
+    
 </script>
 
 <style scoped lang="scss">
@@ -547,6 +535,11 @@ const slideGroup = ref<boolean>(false);
 /* Change background on mouse-over */
 .navbar a:hover {
   color: rgb(19, 216, 19);
+  cursor: pointer;
+}
+.icon-flag{
+  height: 20px;
+  max-width: 20px;
 }
 
 /* Main content */
