@@ -179,7 +179,7 @@
           <v-col
             ><CardProject
               :title="'Gado na Bahia'"
-              :description="'Site catalogo de vendas de gados na Bahia'"
+              :description="$t('cattle_description')"
               :link="'https://gadonabahia.com.br/'"
               :img="'gadonabahia.png'"
             ></CardProject
@@ -187,7 +187,7 @@
           <v-col
             ><CardProject
               :title="'Site Tecno System'"
-              :description="'Site da empresa junior Tecno System'"
+              :description="$t('tecno_system_site_description')"
               :link="'https://tecnosystemej.com.br/'"
               :img="'tecnosystem.png'"
             ></CardProject
@@ -195,7 +195,7 @@
           <v-col
             ><CardProject
               :title="'Pokedex'"
-              :description="'Uma pokedex feita com Vue js'"
+              :description="$t('pokedex_site_description')"
               :link="'https://paulo0056.github.io/pokedex-vue3/'"
               :img="'pokedex.png'"
             ></CardProject
@@ -203,7 +203,7 @@
           <v-col
             ><CardProject
               :title="'Jogo da Memória'"
-              :description="'Um jogo da memoria do anime One Piece'"
+              :description="$t('memorygame_site_description')"
               :link="'https://paulo0056.github.io/memory-game/pages/index.html'"
               :img="'memory-game.png'"
             ></CardProject
@@ -218,7 +218,7 @@
           /></v-col>
         </v-row>
         <v-row>
-          <div class="instruction-arrow-mobile">Arraste para os lados >></div>
+          <div class="instruction-arrow-mobile">{{ $t('swipe') }}</div>
           <v-slide-group v-model="slideGroup" style="padding-left: 10px; padding-right: 8px;" >
             <template #prev>
               <v-btn
@@ -243,7 +243,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'TS Node Setup'"
-                :description="'Setup para projetos com Node e Typescript'"
+                :description="$t('node_setup_repo')"
                 :link="'https://github.com/paulo0056/ts-node-setup'"
                 :is-typescript="true"
                 :is-node="true"
@@ -252,7 +252,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'Posts Node'"
-                :description="'Repositorio para estudos com Node Js'"
+                :description="$t('posts_node_repot')"
                 :link="'https://github.com/paulo0056/node-posts-study'"
                 :is-javascript="true"
                 :is-node="true"
@@ -261,7 +261,7 @@
             <v-slide-group>
               <CardRepo
                 :title="'Clean Node API'"
-                :description="'Projeto para criação de API com DDD e TDD'"
+                :description="$t('clean_node_api_repo')"
                 :link="'https://github.com/paulo0056/clean-node-api'"
                 :is-typescript="true"
                 :is-node="true"
@@ -270,7 +270,7 @@
             <v-slide-group>
               <CardRepo
                 :title="'User API Node'"
-                :description="'Api de criação de usuarios para estudo'"
+                :description="$t('user_api_node')"
                 :link="'https://github.com/paulo0056/user-api-node'"
                 :is-typescript="true"
                 :is-node="true"
@@ -279,7 +279,7 @@
             <v-slide-group>
               <CardRepo
                 :title="'Pokedex'"
-                :description="'Projeto pokedex repositorio'"
+                :description="$t('pokedex_repo')"
                 :link="'https://github.com/paulo0056/pokedex-vue3'"
                 :is-vue="true"
                 :is-typescript="true"
@@ -289,7 +289,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'Jogo da Memória'"
-                :description="'Projeto jogo da memoria repositorio'"
+                :description="$t('memorygame_repo')"
                 :link="'https://github.com/paulo0056/memory-game'"
                 :is-html="true"
                 :is-css="true"
@@ -299,7 +299,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'Animação da Matrix'"
-                :description="'Uma animação da matrix para background'"
+                :description="$t('matrix_repo')"
                 :link="'https://github.com/paulo0056/Matrix-Animation'"
                 :is-html="true"
                 :is-javascript="true"
@@ -309,7 +309,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'Calculadora Js'"
-                :description="'Uma calculadora em javascript'"
+                :description="$t('javascript_calculator')"
                 :link="'https://github.com/paulo0056/Matrix-Animation'"
                 :is-html="true"
                 :is-css="true"
@@ -319,7 +319,7 @@
             <v-slide-group-item>
               <CardRepo
                 :title="'pauloandre.me'"
-                :description="'Repositorio do meu site de apresentação'"
+                :description="$t('pauloandre_repo')"
                 :link="'https://github.com/paulo0056/pauloandrejr.me'"
                 :is-typescript="true"
                 :is-vue="true"
@@ -332,7 +332,7 @@
         <v-row class="row-custom" id="contact">
           <v-col
             ><span style="color: white; margin-left: 20px; font-size: 35px"
-              >Contato</span
+              >{{$t('contact')}}</span
             >
             <hr style="margin-left: 23px; max-width: 95%"
           /></v-col>
@@ -366,7 +366,7 @@
         >
         <v-row justify="center"
           ><span style="color: white; margin-left: 20px;" class="rights-reserved"
-            >Todos os direitos reservados.</span
+            >{{$t('rights_reserved')}}</span
           ></v-row
         >
       </v-container>
