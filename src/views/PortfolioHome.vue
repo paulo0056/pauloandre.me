@@ -17,6 +17,7 @@
             <span style="color: white;" class="mt-6">|</span>
             <v-img :src="getImageUrl('us-flag.png')"  class="mt-8 ml-4 icon-flag"></v-img>
             <a @click="setLocale('en')" class="mt-3">EN</a>
+            <br>
             <a href="#about" class="mt-3"> {{$t('about')}} </a>
             <a href="#projects" class="mt-3"> {{$t('projects')}} </a>
             <a href="#contact" class="mt-3"> {{$t('contact')}} </a>
