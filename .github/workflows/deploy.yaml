@@ -30,4 +30,4 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploy "
-          git push -f "https://github.com/paulo0056/pauloandre.me" main:gh-pages
+          git push -f "https://github.com/paulo0056/pauloandre.me.git" main:gh-pages
