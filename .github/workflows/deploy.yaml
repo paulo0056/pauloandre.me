@@ -19,8 +19,8 @@ jobs:
         run: |
           git config --global credential.helper store
           echo "https://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:x-oauth-basic@github.com" > ~/.git-credentials
-          git config --global user.email $email
-          git config --global user.name $username
+          git config --global user.email pauloandre.dev@gmail.com
+          git config --global user.name paulo0056
       - name: deploy to gh-pages
         run: |
           npm i
