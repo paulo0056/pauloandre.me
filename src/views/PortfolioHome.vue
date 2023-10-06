@@ -8,7 +8,7 @@
     </div>
     <div class="navbar">
       <v-row justify="space-between">
-        <!--  <v-col> <a> Imagem home </a></v-col>> -->
+        <!--  <v-col> <a> Imagem home </a></v-col> -->
         <v-col>
           <v-row justify="end" class="mr-2">
             <v-img
