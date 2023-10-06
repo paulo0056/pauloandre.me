@@ -18,7 +18,7 @@ jobs:
           access_token: "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"
         run: |
           git config --global credential.helper store
-          echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
+          echo "https://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:x-oauth-basic@github.com" > ~/.git-credentials
           git config --global user.email $email
           git config --global user.name $username
       - name: deploy to gh-pages
@@ -28,5 +28,5 @@ jobs:
           cd dist
           git init
           git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" master:gh-pages
+          git commit -m "🚀 Deploy "
+          git push -f "https://github.com/pauloandre.me.git" master:gh-pages
