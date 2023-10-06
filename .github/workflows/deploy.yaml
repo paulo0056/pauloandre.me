@@ -17,6 +17,7 @@ jobs:
           username: "paulo0056"
           access_token: "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"
         run: |
+          git config --global init.defaultBranch main
           git config --global credential.helper store
           echo "https://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:x-oauth-basic@github.com" > ~/.git-credentials
           git config --global user.email pauloandre.dev@gmail.com
@@ -29,4 +30,4 @@ jobs:
           git init
           git add -A
           git commit -m "🚀 Deploy "
-          git push -f "https://github.com/paulo0056/pauloandre.me" master:gh-pages
+          git push -f "https://github.com/paulo0056/pauloandre.me" main:gh-pages
