@@ -8,10 +8,11 @@ export const pt_BR = {
     " Sou um desenvolvedor front-end formado pela UNEB(Universidade do Estado da Bahia), trabalho na área de desenvolvimento há 4 anos, com foco no desenvolvimento front end mais especificamente com Vue Js, JavaScript e TypeScript com as quais trabalho atualmente na GWCloud. Também tive experiencia em gestão de projetos na epoca em que atuei como Presidente da Empresa Junior Tecno System a qual sou conselheiro atualmente. Sou uma pessoa que ama trabalhar em equipe e que tem uma fome gigantesca por adiquirir novos conhecimentos, desejo continuar agregando aonde quer que eu passe com o meu trabalho e conhecimento para que eu possa crescer profissionalmente cada vez mais e consiga alcançar minhas ambições.",
   hire_me: "Me contrate",
   stacks:
-    " Minha stack de tecnologias atual é Html, CSS, JavaScript, TypeScript e Vue, mas tenho conhecimentos e projetos também na área de desenvolvimento com wordpress, php e react e em desenvolvimento mobile com o Flutter e modelagem de banco de dados MySQL e MongoDB.",
+    " Minha stack de tecnologias atual é Html, CSS, JavaScript, TypeScript e Vue, mas tenho conhecimentos e experiencia também na área de desenvolvimento com wordpress, php,react, angular e em desenvolvimento mobile com o Flutter e modelagem de banco de dados MySQL e MongoDB.",
   intern: "Estagiário",
   gwcloud_description_job:
-    " Participação das plainnings e atuando na programação front-end nos sistemas web da empresa, usando javascript, typescript, Vue e design patterns como DDD e TDD",
+    " Participação das plainnings e atuando na programação front-end nos sistemas web da empresa, usando javascript, typescript, Vue, Angular, design patterns como DDD e TDD, API REST , Webpages, API, Nuxt.js, Cypress.io, Atomic Design, Vuetify, DDD, TDD, CI/CD, Vuex, Jest, Storybook, Quasar Scrum, HTML5,CSS",
+  software_developer: "Desenvolvedor de Software",
   programmer: "Programador",
   currently: "Atualmente",
   tecno_system_description:
@@ -27,7 +28,7 @@ export const pt_BR = {
   node_setup_repo: "Setup para projetos com Node e Typescript",
   posts_node_repot: "Repositorio para estudos com Node Js",
   clean_node_api_repo: "Projeto para criação de API com DDD e TDD",
-  user_api_node: "Api de criação de usuarios para estudo",
+  user_api_node: "Api de criação de usuarios",
   pokedex_repo: "Projeto pokedex repositorio'",
   memorygame_repo: "Projeto jogo da memoria repositorio",
   matrix_repo: "Uma animação da matrix para background",
